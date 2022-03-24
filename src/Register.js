@@ -17,6 +17,7 @@ function Register() {
     const[edate,setEdate]=useState("");
     const[status,setStatus]=useState("");
     const[toggle,setToggle]=useState(-1);
+    const[show,setShow]=useState(true);
 
 const save=()=>{
     setToggle(-1);
@@ -51,6 +52,7 @@ const save=()=>{
 
         }
     }
+    setShow(true);
 }
 
 const deleteinfo=(index)=>{
@@ -92,13 +94,9 @@ const view=()=>{
     console.log("#3 ",filter.length)
     filteredList(list=>[...filter])
     console.log("filtered",filter);
+    setShow(false);
 
 }
-
-
-
-
-
   return (
     <div>
     <h1>TODO LIST</h1>
@@ -143,6 +141,8 @@ const view=()=>{
                     </tr>
                 </thead>
                
+                {
+                    show ?
                 
               
                 <tbody >
@@ -167,7 +167,7 @@ const view=()=>{
                         })
                         
                     }
-                </tbody> 
+                </tbody> :
                 <tbody >
                 {
                     filter.map((info,index)=>{
@@ -192,6 +192,7 @@ const view=()=>{
                 }
 
                 </tbody>
+                }
                 
                 
             </table>
