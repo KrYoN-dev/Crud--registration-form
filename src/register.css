@@ -1,0 +1,47 @@
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+table tr th{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.inp1{
+    width:15%;
+    padding: 10px;
+    margin: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn1{
+    text-align: center;
+    padding: 10px 30px;
+    margin: 4px;
+    color: aliceblue;
+    background-color: #4CAF50;
+    outline: none;
+    border: none;
+}
+
+.btn2{
+    text-align: center;
+    
+    margin: 4px;
+    color: red;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
